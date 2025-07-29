@@ -151,7 +151,7 @@
 			
 			$\forall \epsilon$, let $I_y = (y_0 - \epsilon, y_0 + \epsilon)$.
 			
-			By definition, $I_y \in \mathcal N_{y_0}$, therefore $I_y \in f(\mathcal F)$, and $U = f^{-1}(I_y) \in \mathcal N_{x_0}$.
+			By definition, $I_y \in \mathcal N_{y_0}$, therefore $I_y \in f(\mathcal N_{x_0})$, and $U = f^{-1}(I_y) \in \mathcal N_{x_0}$.
 			
 			Since $U$ is open, $\exists \msg{open interval} I_x \st x_0 \in I_x \in U$.
 			
@@ -167,29 +167,43 @@
 			
 			$\forall U$, since $U$ is open, $\exists I_y = (y_0 - \epsilon_1, y_0 + \epsilon_2)$ s.t. $y_0 \in I_y \subseteq U$.
 			
-			Let $\epsilon = \max(\epsilon_1, \epsilon_2)$. As the $\epsilon$-$\delta$ language suggests, $\exists \delta$ s.t. for $I_x = (x_0 - \delta, x_0 + \delta)$, $f(I_x) \subseteq (y_0 - \epsilon, y_0 + \epsilon) \subseteq I_y \subseteq U$.
+			Let $\epsilon = \min(\epsilon_1, \epsilon_2)$. As the $\epsilon$-$\delta$ language suggests, $\exists \delta$ s.t. for $I_x = (x_0 - \delta, x_0 + \delta)$, $f(I_x) \subseteq (y_0 - \epsilon, y_0 + \epsilon) \subseteq I_y \subseteq U$.
 			
-			Therefore $I_x \subseteq f^{-1}(U)$. Since $I_x$ is a neighbourhood to $x_0$, $U \in \mathcal N_{x_0}$.
+			Therefore $I_x \subseteq f^{-1}(U)$. Since $I_x$ is open, $f^{-1}(U) \in \mathcal N_{x_0}$ by definition.
 		\end{proof}
 	\end{frame}
 
 	\section{Application}
 	
-	\begin{frame}{}
+	\begin{frame}{Things Filters Can Do}
 		\begin{center}
-			% \includegraphics[width=0.7\textwidth]{example-image}
-			% \captionof{figure}{占位图说明}
+			\begin{itemize}
+				\item standard topology \& neighbourhood system for limits of $\R \to \R$ functions
+				\item Fr\'echet filter for limits of number sequence
+				\item $$
+						\lim_{\text{filling} \to 0} \text{sandwich} = \text{toast}
+				$$
+			\end{itemize}
 		\end{center}
 	\end{frame}
 
 	\section{Conclusion}
+	
+	\begin{frame}{Conclusion}
+		Limits are a powerful mathematical tool (as we have seen in analysis) to study ``points in spaces'', and by using the filter definition, we could generalize that to many more topological spaces and see how our common definition for limit is closely related to the properties of Euclidean spaces under standard topology.
+		\begin{figure}
+			\includegraphics[height=0.4\textheight]{cauchy}
+			\includegraphics[height=0.4\textheight]{filter}
+			\includegraphics[height=0.4\textheight]{cone}
+		\end{figure}
+    \end{frame}
 
 	\begin{frame}{Thanks}
 		\centering
 		{\Huge \textbf{Thank You!}}\\[2em]
-		{Feel free to contact me if you have any questions}\\[1em]
+		{Contact}\\[1em]
 		{Email: misaka10987@outlook.com}\\
-		{Wechat: misaka10987}\\
+		{WeChat: misaka10987}\\
 		{QQ: 2208129531}
 	\end{frame}
 	
